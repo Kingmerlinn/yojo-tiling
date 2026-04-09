@@ -4,7 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>YOJO Services 4 Tiling | Professional Tiling Services Brisbane</title>
-    <meta name="description" content="Professional wall and floor tiling services in Brisbane, QLD. Licensed QBCC contractor with $10M public liability insurance. Residential & commercial tiling.">
+    <meta name="description" content="YOJO Tiling - Professional tiling services in Brisbane. Bathroom renovations, floor tiling, pool surrounds, waterproofing. QBCC licensed, $10M insured. Free quotes - call 0432 102 627.">
+    <meta name="keywords" content="tiler brisbane, tiling brisbane, bathroom renovation brisbane, floor tiling, wall tiling, waterproofing brisbane, pool tiling, QBCC tiler, tiler near me, tile installer brisbane, bathroom tiler, kitchen splashback brisbane, outdoor tiling, balcony tiling, driveway pavers brisbane">
+    <meta name="author" content="YOJO Tiling - Yojoservices4tiling">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://kingmerlinn.github.io/yojo-tiling/">
+    <meta property="og:title" content="YOJO Tiling | Professional Tiling Services Brisbane">
+    <meta property="og:description" content="Expert tiling for bathrooms, floors, pools & outdoors. QBCC licensed. Free quotes.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://kingmerlinn.github.io/yojo-tiling/">
+    <meta property="og:locale" content="en_AU">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -219,6 +228,38 @@
         }
         footer .socials a:hover { color: var(--accent); }
 
+
+        /* QUOTE FORM */
+        .quote-section { background: linear-gradient(135deg, #1a1a2e, #0f3460); padding: 6rem 2rem; }
+        .quote-container {
+            max-width: 1100px; margin: 0 auto;
+            display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: start;
+        }
+        .quote-text { color: white; }
+        .quote-text h2 { font-size: 2.5rem; font-weight: 800; margin-bottom: 1rem; }
+        .quote-text > p { color: rgba(255,255,255,0.7); font-size: 1.1rem; margin-bottom: 2rem; }
+        .quote-features { margin-bottom: 2.5rem; }
+        .qf { color: rgba(255,255,255,0.9); margin-bottom: 0.75rem; font-size: 1rem; display: flex; align-items: center; gap: 0.75rem; }
+        .qf span { color: var(--gold); font-weight: 700; font-size: 1.2rem; }
+        .quote-contact p { color: rgba(255,255,255,0.5); font-size: 0.9rem; }
+        .quote-form {
+            background: white; border-radius: 20px; padding: 2.5rem;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+        .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+        .form-group { margin-bottom: 1rem; }
+        .form-group label { display: block; font-weight: 600; font-size: 0.85rem; margin-bottom: 0.4rem; color: var(--dark-gray); }
+        .form-group input, .form-group select, .form-group textarea {
+            width: 100%; padding: 0.75rem 1rem; border: 1.5px solid #e0e0e0; border-radius: 10px;
+            font-size: 0.95rem; font-family: inherit; transition: border-color 0.3s; background: #fafafa;
+        }
+        .form-group input:focus, .form-group select:focus, .form-group textarea:focus {
+            outline: none; border-color: var(--accent); background: white;
+        }
+        .form-group textarea { resize: vertical; }
+        .form-note { text-align: center; color: var(--gray); font-size: 0.8rem; margin-top: 1rem; }
+        @media (max-width: 968px) { .quote-container { grid-template-columns: 1fr; } }
+        @media (max-width: 640px) { .form-row { grid-template-columns: 1fr; } }
         /* RESPONSIVE */
         @media (max-width: 968px) {
             .hero-content { grid-template-columns: 1fr; text-align: center; }
@@ -245,6 +286,28 @@
             .section-header h2 { font-size: 2rem; }
         }
     </style>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "YOJO Tiling",
+        "alternateName": "Yojoservices4tiling",
+        "description": "Professional tiling services in Brisbane - bathroom renovations, floor tiling, waterproofing, pool surrounds",
+        "url": "https://kingmerlinn.github.io/yojo-tiling/",
+        "telephone": "+61432102627",
+        "email": "yojoservices4tiling@gmail.com",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Brisbane",
+            "addressRegion": "QLD",
+            "addressCountry": "AU"
+        },
+        "areaServed": ["Brisbane", "Gold Coast", "Sunshine Coast", "South East Queensland"],
+        "serviceType": ["Tiling", "Bathroom Renovation", "Floor Tiling", "Waterproofing", "Pool Tiling"],
+        "priceRange": "$$",
+        "sameAs": ["https://www.instagram.com/yojoservices4tiling/"]
+    }
+    </script>
 </head>
 <body>
 
@@ -514,20 +577,76 @@
 </section>
 
 <!-- CTA -->
-<section class="cta-section" id="contact">
-    <h2>Ready to Start Your Project?</h2>
-    <p>Get a free, no-obligation quote for your tiling project. We'll assess your needs and provide a detailed estimate.</p>
-    <div class="cta-btns">
-        <a href="tel:0432102627" class="btn btn-primary">📞 Call 0432 102 627</a>
-        <a href="mailto:yojoservices4tiling@gmail.com" class="btn btn-outline">✉️ Email Us</a>
-        <a href="https://www.instagram.com/yojoservices4tiling/" target="_blank" class="btn btn-outline">📸 Instagram</a>
+<section class="quote-section" id="contact">
+    <div class="quote-container">
+        <div class="quote-text">
+            <h2>Get a Free Quote</h2>
+            <p>Tell us about your project and we'll get back to you within 24 hours with a detailed estimate.</p>
+            <div class="quote-features">
+                <div class="qf"><span>✓</span> Free, no-obligation quote</div>
+                <div class="qf"><span>✓</span> Response within 24 hours</div>
+                <div class="qf"><span>✓</span> QBCC licensed & insured</div>
+            </div>
+            <div class="quote-contact">
+                <p>Prefer to call?</p>
+                <a href="tel:0432102627" class="btn btn-primary" style="margin-top:0.5rem">📞 0432 102 627</a>
+            </div>
+        </div>
+        <form class="quote-form" action="https://formspree.io/f/xpwrjqkb" method="POST" id="quoteForm">
+            <div class="form-row">
+                <div class="form-group">
+                    <label>Name *</label>
+                    <input type="text" name="name" required placeholder="Your name">
+                </div>
+                <div class="form-group">
+                    <label>Phone *</label>
+                    <input type="tel" name="phone" required placeholder="04XX XXX XXX">
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Email</label>
+                <input type="email" name="email" placeholder="your@email.com">
+            </div>
+            <div class="form-group">
+                <label>Suburb *</label>
+                <input type="text" name="suburb" required placeholder="e.g. Bray Park">
+            </div>
+            <div class="form-group">
+                <label>Type of Work *</label>
+                <select name="work_type" required>
+                    <option value="">Select...</option>
+                    <option>Bathroom Renovation</option>
+                    <option>Floor Tiling</option>
+                    <option>Kitchen Splashback</option>
+                    <option>Wall Tiling</option>
+                    <option>Pool / Outdoor</option>
+                    <option>Waterproofing</option>
+                    <option>Balcony / Patio</option>
+                    <option>Driveway / Pavers</option>
+                    <option>Other</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Approximate Area (m²)</label>
+                <input type="text" name="area" placeholder="e.g. 15">
+            </div>
+            <div class="form-group">
+                <label>Project Details</label>
+                <textarea name="details" rows="3" placeholder="Tell us about your project — what needs to be done, any specific tiles or finishes you want..."></textarea>
+            </div>
+            <input type="hidden" name="_subject" value="New Quote Request - YOJO Tiling">
+            <input type="hidden" name="_template" value="table">
+            <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center">Get Free Quote →</button>
+            <p class="form-note">We respect your privacy. Your details are only used to provide a quote.</p>
+        </form>
     </div>
 </section>
 
 <!-- FOOTER -->
 <footer>
     <div class="logo-foot">YOJO<span>.</span>tiling</div>
-    <p>Yojoservices4tiling — Professional Tiling Services Brisbane</p>
+    <p>YOJO Tiling — Professional Tiling Services Brisbane</p>
+    <p style="font-size:0.8rem;opacity:0.4;">Trading as Yojoservices4tiling</p>
     <p>QBCC Licensed | $10M Public Liability | WorkCover QLD</p>
     <div class="socials">
         <a href="https://www.instagram.com/yojoservices4tiling/" target="_blank" rel="noopener" title="Instagram">📸</a>
