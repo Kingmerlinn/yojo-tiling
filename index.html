@@ -229,6 +229,27 @@
         footer .socials a:hover { color: var(--accent); }
 
 
+
+        /* REVIEWS */
+        .reviews-grid {
+            max-width: 1200px; margin: 0 auto;
+            display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem;
+        }
+        .review-card {
+            background: white; border-radius: 20px; padding: 2rem;
+            box-shadow: var(--shadow); border: 1px solid rgba(0,0,0,0.04);
+            text-align: center;
+        }
+        .review-stars { color: #f5a623; font-size: 1.4rem; margin-bottom: 1rem; letter-spacing: 2px; }
+        .review-text { color: var(--gray); font-size: 1rem; font-style: italic; margin-bottom: 1rem; line-height: 1.6; }
+        .review-author { font-weight: 700; color: var(--primary); font-size: 0.95rem; }
+        .review-location { color: var(--gray); font-size: 0.85rem; }
+        .review-cta { color: var(--accent); text-decoration: none; font-weight: 600; font-size: 0.95rem; }
+        .review-cta:hover { text-decoration: underline; }
+        .review-bottom { text-align: center; margin-top: 2.5rem; }
+        @media (max-width: 968px) { .reviews-grid { grid-template-columns: 1fr 1fr; } }
+        @media (max-width: 640px) { .reviews-grid { grid-template-columns: 1fr; } }
+
         /* QUOTE FORM */
         .quote-section { background: linear-gradient(135deg, #1a1a2e, #0f3460); padding: 6rem 2rem; }
         .quote-container {
@@ -321,6 +342,7 @@
             <li><a href="#projects">Projects</a></li>
             <li><a href="#why">Why Us</a></li>
             <li><a href="#areas">Areas</a></li>
+            <li><a href="#reviews">Reviews</a></li>
             <li><a href="#contact" class="nav-cta">Get a Quote</a></li>
         </ul>
         <div class="hamburger" onclick="document.getElementById('navLinks').classList.toggle('open')">☰</div>
@@ -577,6 +599,25 @@
 </section>
 
 <!-- CTA -->
+<!-- REVIEWS -->
+<section id="reviews">
+    <div class="section-header">
+        <p class="tag">Customer Reviews</p>
+        <h2>What Our Clients Say</h2>
+        <p>Real feedback from real customers across Brisbane.</p>
+    </div>
+    <div class="reviews-grid">
+        <div class="review-card">
+            <div class="review-stars">★★★★★</div>
+            <p class="review-text">Be the first to leave a review!</p>
+            <a href="review.html" class="review-cta">Leave a Review →</a>
+        </div>
+    </div>
+    <div class="review-bottom">
+        <a href="review.html" class="btn btn-primary">⭐ Leave a Review</a>
+    </div>
+</section>
+
 <section class="quote-section" id="contact">
     <div class="quote-container">
         <div class="quote-text">
@@ -642,7 +683,7 @@
     </div>
 </section>
 
-<!-- FOOTER -->
+
 <footer>
     <div class="logo-foot">YOJO<span>.</span>tiling</div>
     <p>YOJO Tiling — Professional Tiling Services Brisbane</p>
