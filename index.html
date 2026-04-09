@@ -77,10 +77,12 @@
         /* SERVICES - compact grid */
         .services{background:var(--light)}
         .svc-grid{max-width:1000px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:1rem}
-        .svc{background:white;border-radius:14px;padding:1.3rem;text-align:center;border:1px solid rgba(0,0,0,0.04);transition:all 0.2s}
-        .svc:hover{transform:translateY(-3px);box-shadow:0 8px 25px rgba(0,0,0,0.06)}
-        .svc-ico{font-size:1.8rem;margin-bottom:0.6rem}
-        .svc h3{font-size:0.85rem;font-weight:600;color:var(--slate)}
+        .svc{background:white;border-radius:14px;overflow:hidden;text-align:center;border:1px solid rgba(0,0,0,0.04);transition:all 0.2s;text-decoration:none;display:block}
+        .svc:hover{transform:translateY(-3px);box-shadow:0 8px 25px rgba(0,0,0,0.08)}
+        .svc-img{aspect-ratio:1;overflow:hidden}
+        .svc-img img{width:100%;height:100%;object-fit:cover;transition:transform 0.3s}
+        .svc:hover .svc-img img{transform:scale(1.08)}
+        .svc h3{font-size:0.85rem;font-weight:600;color:var(--slate);padding:0.8rem 0.5rem}
 
         /* GALLERY - tighter grid */
         .gallery{background:var(--white)}
@@ -170,12 +172,30 @@
 <section class="services">
     <div class="sec-title"><h2>What We Do</h2></div>
     <div class="svc-grid">
-        <div class="svc"><div class="svc-ico">🚿</div><h3>Bathrooms</h3></div>
-        <div class="svc"><div class="svc-ico">🏠</div><h3>Floors</h3></div>
-        <div class="svc"><div class="svc-ico">🍳</div><h3>Splashbacks</h3></div>
-        <div class="svc"><div class="svc-ico">🏊</div><h3>Pools</h3></div>
-        <div class="svc"><div class="svc-ico">💧</div><h3>Waterproofing</h3></div>
-        <div class="svc"><div class="svc-ico">🪨</div><h3>Driveways</h3></div>
+        <a class="svc" href="#contact">
+            <div class="svc-img"><img src="images/bathroom-complete.jpg" alt="Bathroom tiling" loading="lazy"></div>
+            <h3>Bathrooms</h3>
+        </a>
+        <a class="svc" href="#contact">
+            <div class="svc-img"><img src="images/pattern-floor.jpg" alt="Floor tiling" loading="lazy"></div>
+            <h3>Floors</h3>
+        </a>
+        <a class="svc" href="#contact">
+            <div class="svc-img"><img src="images/kitchen-splashback.jpg" alt="Kitchen splashback" loading="lazy"></div>
+            <h3>Splashbacks</h3>
+        </a>
+        <a class="svc" href="#contact">
+            <div class="svc-img"><img src="images/pool-highend.jpg" alt="Pool tiling" loading="lazy"></div>
+            <h3>Pools</h3>
+        </a>
+        <a class="svc" href="#contact">
+            <div class="svc-img"><img src="images/shower-room-1.jpg" alt="Waterproofing" loading="lazy"></div>
+            <h3>Waterproofing</h3>
+        </a>
+        <a class="svc" href="#contact">
+            <div class="svc-img"><img src="images/driveway-complete.jpg" alt="Driveway pavers" loading="lazy"></div>
+            <h3>Driveways</h3>
+        </a>
     </div>
 </section>
 
