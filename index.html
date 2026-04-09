@@ -3,754 +3,300 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>YOJO Services 4 Tiling | Professional Tiling Services Brisbane</title>
+    <title>YOJO Tiling | Professional Tiling Services Brisbane</title>
     <meta name="description" content="YOJO Tiling - Professional tiling services in Brisbane. Bathroom renovations, floor tiling, pool surrounds, waterproofing. QBCC licensed, $10M insured. Free quotes - call 0432 102 627.">
-    <meta name="keywords" content="tiler brisbane, tiling brisbane, bathroom renovation brisbane, floor tiling, wall tiling, waterproofing brisbane, pool tiling, QBCC tiler, tiler near me, tile installer brisbane, bathroom tiler, kitchen splashback brisbane, outdoor tiling, balcony tiling, driveway pavers brisbane">
-    <meta name="author" content="YOJO Tiling - Yojoservices4tiling">
+    <meta name="keywords" content="tiler brisbane, tiling brisbane, bathroom renovation brisbane, floor tiling, wall tiling, waterproofing brisbane, pool tiling, QBCC tiler, tiler near me, tile installer brisbane">
+    <meta name="author" content="YOJO Tiling">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://kingmerlinn.github.io/yojo-tiling/">
     <meta property="og:title" content="YOJO Tiling | Professional Tiling Services Brisbane">
     <meta property="og:description" content="Expert tiling for bathrooms, floors, pools & outdoors. QBCC licensed. Free quotes.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://kingmerlinn.github.io/yojo-tiling/">
     <meta property="og:locale" content="en_AU">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"LocalBusiness","name":"YOJO Tiling","alternateName":"Yojoservices4tiling","description":"Professional tiling services in Brisbane","url":"https://kingmerlinn.github.io/yojo-tiling/","telephone":"+61432102627","email":"yojoservices4tiling@gmail.com","address":{"@type":"PostalAddress","addressLocality":"Brisbane","addressRegion":"QLD","addressCountry":"AU"},"areaServed":["Brisbane","Gold Coast","Sunshine Coast"],"priceRange":"$$","sameAs":["https://www.instagram.com/yojoservices4tiling/"]}
+    </script>
     <style>
         :root {
-            --primary: #1a1a2e;
-            --accent: #e94560;
-            --accent-hover: #d63851;
-            --gold: #f5a623;
-            --light: #f8f9fa;
-            --gray: #6c757d;
-            --dark-gray: #343a40;
+            --slate: #2d3436;
+            --warm: #d4a574;
+            --warm-light: #f0e0d0;
+            --terra: #c4956a;
+            --dark: #1a1a1a;
+            --text: #4a4a4a;
+            --light: #faf8f5;
             --white: #ffffff;
-            --shadow: 0 4px 30px rgba(0,0,0,0.08);
-            --shadow-lg: 0 20px 60px rgba(0,0,0,0.12);
+            --green: #2d8a5e;
         }
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        html { scroll-behavior: smooth; }
-        body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-            color: var(--primary); line-height: 1.6; overflow-x: hidden;
-        }
+        *{margin:0;padding:0;box-sizing:border-box}
+        html{scroll-behavior:smooth}
+        body{font-family:'DM Sans',sans-serif;color:var(--text);-webkit-font-smoothing:antialiased}
 
-        /* NAV */
-        nav {
-            position: fixed; top: 0; width: 100%; z-index: 1000;
-            background: rgba(255,255,255,0.95); backdrop-filter: blur(20px);
-            border-bottom: 1px solid rgba(0,0,0,0.06); transition: all 0.3s;
-        }
-        nav.scrolled { box-shadow: var(--shadow); }
-        .nav-inner {
-            max-width: 1200px; margin: 0 auto;
-            display: flex; align-items: center; justify-content: space-between;
-            padding: 1rem 2rem;
-        }
-        .logo { font-size: 1.4rem; font-weight: 800; color: var(--primary); text-decoration: none; letter-spacing: -0.5px; }
-        .logo span { color: var(--accent); }
-        .nav-links { display: flex; gap: 2rem; list-style: none; }
-        .nav-links a { text-decoration: none; color: var(--gray); font-weight: 500; font-size: 0.9rem; transition: color 0.3s; }
-        .nav-links a:hover { color: var(--accent); }
-        .nav-cta { background: var(--accent); color: white !important; padding: 0.6rem 1.4rem; border-radius: 8px; font-weight: 600 !important; }
-        .nav-cta:hover { background: var(--accent-hover); }
-        .hamburger { display: none; cursor: pointer; font-size: 1.5rem; }
+        /* NAV - minimal */
+        nav{position:fixed;top:0;width:100%;z-index:100;background:rgba(255,255,255,0.97);backdrop-filter:blur(12px);border-bottom:1px solid rgba(0,0,0,0.05);padding:1rem 1.5rem}
+        .nav-inner{max-width:1000px;margin:0 auto;display:flex;align-items:center;justify-content:space-between}
+        .logo{font-size:1.3rem;font-weight:700;color:var(--slate);text-decoration:none;letter-spacing:-0.5px}
+        .logo span{color:var(--warm)}
+        .nav-r{display:flex;align-items:center;gap:1.5rem}
+        .nav-r a{text-decoration:none;color:var(--text);font-size:0.9rem;font-weight:500}
+        .nav-btn{background:var(--slate);color:white!important;padding:0.5rem 1.2rem;border-radius:8px;font-weight:600!important;font-size:0.85rem!important}
+        .nav-btn:hover{background:var(--dark)}
+        .nav-tel{display:none}
+        @media(min-width:640px){.nav-tel{display:inline}}
 
-        /* HERO */
-        .hero {
-            min-height: 100vh; display: flex; align-items: center;
-            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
-            position: relative; overflow: hidden;
-        }
-        .hero::before {
-            content: ''; position: absolute; inset: 0;
-            background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-        }
-        .hero-content {
-            max-width: 1200px; margin: 0 auto; padding: 6rem 2rem;
-            position: relative; z-index: 1;
-            display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center;
-        }
-        .hero-text h1 { font-size: 3.5rem; font-weight: 800; color: white; line-height: 1.1; margin-bottom: 1.5rem; }
-        .hero-text h1 em {
-            font-style: normal;
-            background: linear-gradient(135deg, var(--accent), var(--gold));
-            -webkit-background-clip: text; -webkit-text-fill-color: transparent;
-        }
-        .hero-text p { font-size: 1.2rem; color: rgba(255,255,255,0.7); margin-bottom: 2rem; max-width: 500px; }
-        .hero-badges { display: flex; gap: 1rem; flex-wrap: wrap; margin-bottom: 2.5rem; }
-        .badge {
-            background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.15);
-            padding: 0.5rem 1rem; border-radius: 50px;
-            color: rgba(255,255,255,0.9); font-size: 0.85rem; font-weight: 500;
-        }
-        .hero-btns { display: flex; gap: 1rem; flex-wrap: wrap; }
-        .btn {
-            padding: 1rem 2rem; border-radius: 12px; font-weight: 600;
-            text-decoration: none; font-size: 1rem; transition: all 0.3s;
-            display: inline-flex; align-items: center; gap: 0.5rem;
-        }
-        .btn-primary { background: var(--accent); color: white; box-shadow: 0 4px 20px rgba(233,69,96,0.4); }
-        .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 30px rgba(233,69,96,0.5); }
-        .btn-outline { border: 2px solid rgba(255,255,255,0.3); color: white; background: transparent; }
-        .btn-outline:hover { border-color: white; background: rgba(255,255,255,0.05); }
-        .hero-visual { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
-        .hero-card {
-            background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.1);
-            border-radius: 16px; padding: 1.5rem; backdrop-filter: blur(10px); transition: transform 0.3s;
-        }
-        .hero-card:hover { transform: translateY(-4px); }
-        .hero-card:first-child { grid-column: span 2; }
-        .hero-card .num { font-size: 2.5rem; font-weight: 800; color: var(--gold); }
-        .hero-card .label { color: rgba(255,255,255,0.7); font-size: 0.9rem; margin-top: 0.25rem; }
+        /* HERO - clean, tile-inspired */
+        .hero{min-height:100vh;display:flex;align-items:center;background:var(--slate);position:relative;overflow:hidden;padding:5rem 1.5rem 3rem}
+        .hero::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,#2d3436 0%,#3d4f4f 50%,#2d3436 100%);opacity:1}
+        .hero::after{content:'';position:absolute;inset:0;background:repeating-linear-gradient(0deg,transparent,transparent 59px,rgba(255,255,255,0.03) 59px,rgba(255,255,255,0.03) 60px),repeating-linear-gradient(90deg,transparent,transparent 59px,rgba(255,255,255,0.03) 59px,rgba(255,255,255,0.03) 60px)}
+        .hero-inner{max-width:1000px;margin:0 auto;position:relative;z-index:1;text-align:center}
+        .hero h1{font-size:clamp(2rem,6vw,3.5rem);font-weight:700;color:white;line-height:1.15;margin-bottom:1rem}
+        .hero h1 em{font-style:normal;color:var(--warm)}
+        .hero p{font-size:clamp(1rem,2.5vw,1.15rem);color:rgba(255,255,255,0.6);max-width:500px;margin:0 auto 1.5rem}
+        .hero-badges{display:flex;gap:0.6rem;justify-content:center;flex-wrap:wrap;margin-bottom:2rem}
+        .badge{background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.1);padding:0.4rem 0.9rem;border-radius:100px;color:rgba(255,255,255,0.8);font-size:0.8rem;font-weight:500}
+        .hero-btns{display:flex;gap:0.75rem;justify-content:center;flex-wrap:wrap}
+        .btn{padding:0.85rem 1.8rem;border-radius:10px;font-weight:600;text-decoration:none;font-size:0.95rem;transition:all 0.2s;display:inline-flex;align-items:center;gap:0.4rem;border:none;cursor:pointer}
+        .btn-warm{background:var(--warm);color:white}
+        .btn-warm:hover{background:var(--terra);transform:translateY(-1px)}
+        .btn-ghost{border:1.5px solid rgba(255,255,255,0.25);color:white;background:transparent}
+        .btn-ghost:hover{border-color:rgba(255,255,255,0.5)}
+        .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;max-width:500px;margin:2.5rem auto 0}
+        .stat{text-align:center}
+        .stat-n{font-size:1.8rem;font-weight:700;color:var(--warm)}
+        .stat-l{font-size:0.75rem;color:rgba(255,255,255,0.5);text-transform:uppercase;letter-spacing:1px}
 
-        /* SECTIONS */
-        section { padding: 6rem 2rem; }
-        .section-header { text-align: center; max-width: 600px; margin: 0 auto 4rem; }
-        .section-header .tag { color: var(--accent); font-weight: 600; text-transform: uppercase; font-size: 0.85rem; letter-spacing: 2px; margin-bottom: 0.75rem; }
-        .section-header h2 { font-size: 2.5rem; font-weight: 800; margin-bottom: 1rem; }
-        .section-header p { color: var(--gray); font-size: 1.1rem; }
+        /* SECTION COMMON */
+        section{padding:4rem 1.5rem}
+        .sec-title{text-align:center;margin-bottom:2.5rem}
+        .sec-title h2{font-size:clamp(1.5rem,4vw,2rem);font-weight:700;color:var(--slate);margin-bottom:0.4rem}
+        .sec-title p{color:var(--text);font-size:0.95rem;opacity:0.7}
 
-        /* SERVICES */
-        .services { background: var(--light); }
-        .services-grid { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; }
-        .service-card {
-            background: white; border-radius: 20px; padding: 2.5rem;
-            box-shadow: var(--shadow); transition: all 0.3s; border: 1px solid rgba(0,0,0,0.04);
-        }
-        .service-card:hover { transform: translateY(-8px); box-shadow: var(--shadow-lg); }
-        .service-icon {
-            width: 60px; height: 60px; border-radius: 14px;
-            display: flex; align-items: center; justify-content: center; font-size: 1.8rem; margin-bottom: 1.5rem;
-            background: linear-gradient(135deg, rgba(233,69,96,0.1), rgba(245,166,35,0.1));
-        }
-        .service-card h3 { font-size: 1.3rem; margin-bottom: 0.75rem; }
-        .service-card p { color: var(--gray); font-size: 0.95rem; }
+        /* SERVICES - compact grid */
+        .services{background:var(--light)}
+        .svc-grid{max-width:1000px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:1rem}
+        .svc{background:white;border-radius:14px;padding:1.3rem;text-align:center;border:1px solid rgba(0,0,0,0.04);transition:all 0.2s}
+        .svc:hover{transform:translateY(-3px);box-shadow:0 8px 25px rgba(0,0,0,0.06)}
+        .svc-ico{font-size:1.8rem;margin-bottom:0.6rem}
+        .svc h3{font-size:0.85rem;font-weight:600;color:var(--slate)}
 
-        /* INSTAGRAM GALLERY */
-        .gallery-section { background: var(--white); }
-        .ig-grid {
-            max-width: 1200px; margin: 0 auto;
-            display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px;
-        }
-        .ig-item {
-            position: relative; aspect-ratio: 1; overflow: hidden;
-            border-radius: 4px; cursor: pointer;
-        }
-        .ig-item img {
-            width: 100%; height: 100%; object-fit: cover;
-            transition: transform 0.4s ease;
-        }
-        .ig-item:hover img { transform: scale(1.08); }
-        .ig-overlay {
-            position: absolute; inset: 0;
-            background: rgba(0,0,0,0.4); opacity: 0;
-            display: flex; align-items: center; justify-content: center;
-            color: white; font-weight: 600; font-size: 0.9rem;
-            transition: opacity 0.3s; text-align: center; padding: 1rem;
-        }
-        .ig-item:hover .ig-overlay { opacity: 1; }
-        .ig-follow {
-            text-align: center; margin-top: 2.5rem;
-        }
-        .ig-follow a {
-            display: inline-flex; align-items: center; gap: 0.5rem;
-            background: linear-gradient(135deg, #833ab4, #fd1d1d, #fcb045);
-            color: white; padding: 0.8rem 2rem; border-radius: 12px;
-            text-decoration: none; font-weight: 600; font-size: 1rem;
-            transition: all 0.3s; box-shadow: 0 4px 20px rgba(131,58,180,0.3);
-        }
-        .ig-follow a:hover { transform: translateY(-2px); box-shadow: 0 8px 30px rgba(131,58,180,0.4); }
+        /* GALLERY - tighter grid */
+        .gallery{background:var(--white)}
+        .gal-grid{max-width:1000px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr);gap:4px}
+        .gal-item{aspect-ratio:1;overflow:hidden;border-radius:2px}
+        .gal-item img{width:100%;height:100%;object-fit:cover;transition:transform 0.3s}
+        .gal-item:hover img{transform:scale(1.05)}
+        .gal-follow{text-align:center;margin-top:1.5rem}
+        .gal-follow a{display:inline-flex;align-items:center;gap:0.4rem;color:var(--text);text-decoration:none;font-weight:600;font-size:0.9rem}
+        .gal-follow a:hover{color:var(--warm)}
+        @media(max-width:640px){.gal-grid{grid-template-columns:repeat(3,1fr)}}
 
-        /* PROJECTS LIST */
-        .projects-grid { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; }
-        .project-card {
-            border-radius: 20px; overflow: hidden; background: white;
-            box-shadow: var(--shadow); transition: all 0.3s; border: 1px solid rgba(0,0,0,0.04);
-        }
-        .project-card:hover { transform: translateY(-8px); box-shadow: var(--shadow-lg); }
-        .project-header {
-            height: 140px; display: flex; align-items: center; justify-content: center;
-            font-size: 3rem; color: rgba(255,255,255,0.9);
-        }
-        .project-header.c1 { background: linear-gradient(135deg, #1a1a2e, #16213e); }
-        .project-header.c2 { background: linear-gradient(135deg, #0f3460, #533483); }
-        .project-header.c3 { background: linear-gradient(135deg, #e94560, #f5a623); }
-        .project-header.c4 { background: linear-gradient(135deg, #16213e, #0f3460); }
-        .project-header.c5 { background: linear-gradient(135deg, #533483, #e94560); }
-        .project-header.c6 { background: linear-gradient(135deg, #f5a623, #1a1a2e); }
-        .project-info { padding: 1.5rem; }
-        .project-info h3 { font-size: 1.1rem; margin-bottom: 0.5rem; }
-        .project-info p { color: var(--gray); font-size: 0.9rem; }
-        .project-tag {
-            display: inline-block; background: rgba(233,69,96,0.08);
-            color: var(--accent); padding: 0.25rem 0.75rem; border-radius: 50px;
-            font-size: 0.8rem; font-weight: 500; margin-top: 0.75rem;
-        }
-
-        /* WHY US */
-        .why-us { background: var(--light); }
-        .why-grid { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: repeat(4, 1fr); gap: 2rem; }
-        .why-card { text-align: center; padding: 2rem; background: white; border-radius: 20px; box-shadow: var(--shadow); transition: all 0.3s; }
-        .why-card:hover { transform: translateY(-4px); }
-        .why-icon { font-size: 2.5rem; margin-bottom: 1rem; }
-        .why-card h3 { font-size: 1.1rem; margin-bottom: 0.5rem; }
-        .why-card p { color: var(--gray); font-size: 0.9rem; }
-
-        /* AREAS */
-        .area-list {
-            max-width: 1200px; margin: 0 auto;
-            display: flex; flex-wrap: wrap; gap: 0.75rem; justify-content: center;
-        }
-        .area-pill {
-            background: white; border: 1px solid rgba(0,0,0,0.08);
-            padding: 0.6rem 1.2rem; border-radius: 50px;
-            font-size: 0.9rem; color: var(--dark-gray); box-shadow: 0 2px 8px rgba(0,0,0,0.04);
-        }
-
-        /* CTA */
-        .cta-section { background: linear-gradient(135deg, #1a1a2e, #0f3460); text-align: center; color: white; }
-        .cta-section h2 { font-size: 2.5rem; font-weight: 800; margin-bottom: 1rem; }
-        .cta-section p { color: rgba(255,255,255,0.7); font-size: 1.1rem; margin-bottom: 2.5rem; max-width: 500px; margin-left: auto; margin-right: auto; }
-        .cta-btns { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
-
-        /* FOOTER */
-        footer { background: var(--primary); color: rgba(255,255,255,0.6); padding: 3rem 2rem; text-align: center; }
-        footer .logo-foot { color: white; font-size: 1.2rem; font-weight: 700; margin-bottom: 1rem; }
-        footer .logo-foot span { color: var(--accent); }
-        footer p { font-size: 0.9rem; margin-bottom: 0.5rem; }
-        footer .socials { margin: 1.5rem 0; }
-        footer .socials a {
-            color: rgba(255,255,255,0.6); text-decoration: none; font-size: 1.5rem;
-            margin: 0 0.75rem; transition: color 0.3s;
-        }
-        footer .socials a:hover { color: var(--accent); }
-
-
-
-        /* REVIEWS */
-        .reviews-grid {
-            max-width: 1200px; margin: 0 auto;
-            display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem;
-        }
-        .review-card {
-            background: white; border-radius: 20px; padding: 2rem;
-            box-shadow: var(--shadow); border: 1px solid rgba(0,0,0,0.04);
-            text-align: center;
-        }
-        .review-stars { color: #f5a623; font-size: 1.4rem; margin-bottom: 1rem; letter-spacing: 2px; }
-        .review-text { color: var(--gray); font-size: 1rem; font-style: italic; margin-bottom: 1rem; line-height: 1.6; }
-        .review-author { font-weight: 700; color: var(--primary); font-size: 0.95rem; }
-        .review-location { color: var(--gray); font-size: 0.85rem; }
-        .review-cta { color: var(--accent); text-decoration: none; font-weight: 600; font-size: 0.95rem; }
-        .review-cta:hover { text-decoration: underline; }
-        .review-bottom { text-align: center; margin-top: 2.5rem; }
-        @media (max-width: 968px) { .reviews-grid { grid-template-columns: 1fr 1fr; } }
-        @media (max-width: 640px) { .reviews-grid { grid-template-columns: 1fr; } }
+        /* REVIEWS - horizontal scroll on mobile */
+        .reviews{background:var(--light)}
+        .rev-scroll{max-width:1000px;margin:0 auto;display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
+        .rev{background:white;border-radius:14px;padding:1.5rem;border:1px solid rgba(0,0,0,0.04)}
+        .rev-stars{color:var(--warm);font-size:1rem;letter-spacing:1px;margin-bottom:0.6rem}
+        .rev-text{font-size:0.9rem;color:var(--text);line-height:1.5;margin-bottom:0.8rem;font-style:italic}
+        .rev-who{font-weight:600;font-size:0.85rem;color:var(--slate)}
+        .rev-where{font-size:0.8rem;color:var(--text);opacity:0.5}
+        .rev-badge{text-align:center;margin-top:1.5rem;font-size:0.85rem;color:var(--text);opacity:0.6}
+        @media(max-width:768px){.rev-scroll{grid-template-columns:1fr 1fr;gap:0.75rem}}
+        @media(max-width:480px){.rev-scroll{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:0.75rem;padding-bottom:0.5rem;-webkit-overflow-scrolling:touch}.rev{min-width:280px;scroll-snap-align:start}}
 
         /* QUOTE FORM */
-        .quote-section { background: linear-gradient(135deg, #1a1a2e, #0f3460); padding: 6rem 2rem; }
-        .quote-container {
-            max-width: 1100px; margin: 0 auto;
-            display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: start;
-        }
-        .quote-text { color: white; }
-        .quote-text h2 { font-size: 2.5rem; font-weight: 800; margin-bottom: 1rem; }
-        .quote-text > p { color: rgba(255,255,255,0.7); font-size: 1.1rem; margin-bottom: 2rem; }
-        .quote-features { margin-bottom: 2.5rem; }
-        .qf { color: rgba(255,255,255,0.9); margin-bottom: 0.75rem; font-size: 1rem; display: flex; align-items: center; gap: 0.75rem; }
-        .qf span { color: var(--gold); font-weight: 700; font-size: 1.2rem; }
-        .quote-contact p { color: rgba(255,255,255,0.5); font-size: 0.9rem; }
-        .quote-form {
-            background: white; border-radius: 20px; padding: 2.5rem;
-            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
-        }
-        .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
-        .form-group { margin-bottom: 1rem; }
-        .form-group label { display: block; font-weight: 600; font-size: 0.85rem; margin-bottom: 0.4rem; color: var(--dark-gray); }
-        .form-group input, .form-group select, .form-group textarea {
-            width: 100%; padding: 0.75rem 1rem; border: 1.5px solid #e0e0e0; border-radius: 10px;
-            font-size: 0.95rem; font-family: inherit; transition: border-color 0.3s; background: #fafafa;
-        }
-        .form-group input:focus, .form-group select:focus, .form-group textarea:focus {
-            outline: none; border-color: var(--accent); background: white;
-        }
-        .form-group textarea { resize: vertical; }
-        .form-note { text-align: center; color: var(--gray); font-size: 0.8rem; margin-top: 1rem; }
-        @media (max-width: 968px) { .quote-container { grid-template-columns: 1fr; } }
-        @media (max-width: 640px) { .form-row { grid-template-columns: 1fr; } }
-        /* RESPONSIVE */
-        @media (max-width: 968px) {
-            .hero-content { grid-template-columns: 1fr; text-align: center; }
-            .hero-text p { margin: 0 auto 2rem; }
-            .hero-badges { justify-content: center; }
-            .hero-btns { justify-content: center; }
-            .hero-visual { max-width: 400px; margin: 0 auto; }
-            .hero-text h1 { font-size: 2.5rem; }
-            .services-grid, .projects-grid { grid-template-columns: 1fr 1fr; }
-            .why-grid { grid-template-columns: 1fr 1fr; }
-            .ig-grid { grid-template-columns: repeat(3, 1fr); }
-        }
-        @media (max-width: 640px) {
-            .services-grid, .projects-grid, .why-grid { grid-template-columns: 1fr; }
-            .ig-grid { grid-template-columns: repeat(2, 1fr); }
-            .nav-links { display: none; }
-            .hamburger { display: block; }
-            .nav-links.open {
-                display: flex; flex-direction: column;
-                position: absolute; top: 100%; left: 0; right: 0;
-                background: white; padding: 1rem 2rem; gap: 1rem; box-shadow: var(--shadow);
-            }
-            .hero-text h1 { font-size: 2rem; }
-            .section-header h2 { font-size: 2rem; }
-        }
+        .quote{background:var(--slate);color:white;padding:4rem 1.5rem}
+        .quote-inner{max-width:800px;margin:0 auto}
+        .quote-inner h2{font-size:clamp(1.5rem,4vw,2rem);font-weight:700;margin-bottom:0.4rem;text-align:center}
+        .quote-inner>p{text-align:center;color:rgba(255,255,255,0.5);margin-bottom:2rem;font-size:0.95rem}
+        .q-form{background:white;border-radius:16px;padding:2rem;color:var(--text)}
+        .q-row{display:grid;grid-template-columns:1fr 1fr;gap:0.75rem}
+        .q-grp{margin-bottom:0.75rem}
+        .q-grp label{display:block;font-weight:600;font-size:0.8rem;margin-bottom:0.3rem;color:var(--slate)}
+        .q-grp input,.q-grp select,.q-grp textarea{width:100%;padding:0.65rem 0.9rem;border:1.5px solid #e8e8e8;border-radius:8px;font-size:0.9rem;font-family:inherit;background:#fafafa}
+        .q-grp input:focus,.q-grp select:focus,.q-grp textarea:focus{outline:none;border-color:var(--warm);background:white}
+        .q-grp textarea{resize:vertical;min-height:70px}
+        .q-features{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin:1.5rem 0;color:rgba(255,255,255,0.7);font-size:0.85rem}
+        .q-features span::before{content:'✓ ';color:var(--warm)}
+        .q-or{text-align:center;margin-top:1.5rem}
+        .q-or a{color:var(--warm);font-weight:600;text-decoration:none;font-size:1.1rem}
+        @media(max-width:480px){.q-row{grid-template-columns:1fr}}
+
+        /* FOOTER */
+        footer{background:var(--dark);color:rgba(255,255,255,0.4);padding:2rem 1.5rem;text-align:center;font-size:0.8rem}
+        footer .f-logo{color:white;font-size:1.1rem;font-weight:700;margin-bottom:0.5rem}
+        footer .f-logo span{color:var(--warm)}
+        footer a{color:rgba(255,255,255,0.5);text-decoration:none;margin:0 0.5rem}
+        footer a:hover{color:var(--warm)}
+        footer .f-trade{opacity:0.3;margin-top:0.5rem}
     </style>
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "LocalBusiness",
-        "name": "YOJO Tiling",
-        "alternateName": "Yojoservices4tiling",
-        "description": "Professional tiling services in Brisbane - bathroom renovations, floor tiling, waterproofing, pool surrounds",
-        "url": "https://kingmerlinn.github.io/yojo-tiling/",
-        "telephone": "+61432102627",
-        "email": "yojoservices4tiling@gmail.com",
-        "address": {
-            "@type": "PostalAddress",
-            "addressLocality": "Brisbane",
-            "addressRegion": "QLD",
-            "addressCountry": "AU"
-        },
-        "areaServed": ["Brisbane", "Gold Coast", "Sunshine Coast", "South East Queensland"],
-        "serviceType": ["Tiling", "Bathroom Renovation", "Floor Tiling", "Waterproofing", "Pool Tiling"],
-        "priceRange": "$$",
-        "sameAs": ["https://www.instagram.com/yojoservices4tiling/"]
-    }
-    </script>
 </head>
 <body>
 
-<!-- NAV -->
-<nav id="navbar">
+<nav>
     <div class="nav-inner">
-        <a href="#" class="logo">YOJO<span>.</span>tiling</a>
-        <ul class="nav-links" id="navLinks">
-            <li><a href="#services">Services</a></li>
-            <li><a href="#gallery">Our Work</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#why">Why Us</a></li>
-            <li><a href="#areas">Areas</a></li>
-            <li><a href="#reviews">Reviews</a></li>
-            <li><a href="#contact" class="nav-cta">Get a Quote</a></li>
-        </ul>
-        <div class="hamburger" onclick="document.getElementById('navLinks').classList.toggle('open')">☰</div>
+        <a href="#" class="logo">YOJO<span>.</span></a>
+        <div class="nav-r">
+            <a href="#work">Work</a>
+            <a href="#reviews">Reviews</a>
+            <a href="tel:0432102627" class="nav-tel">0432 102 627</a>
+            <a href="#contact" class="nav-btn">Free Quote</a>
+        </div>
     </div>
 </nav>
 
-<!-- HERO -->
 <section class="hero">
-    <div class="hero-content">
-        <div class="hero-text">
-            <h1>Professional <em>Tiling Services</em> in Brisbane</h1>
-            <p>Expert wall and floor tiling for residential and commercial projects across South East Queensland. QBCC licensed, fully insured, quality guaranteed.</p>
-            <div class="hero-badges">
-                <span class="badge">🏅 QBCC Licensed</span>
-                <span class="badge">🛡️ $10M Public Liability</span>
-                <span class="badge">📋 WorkCover QLD</span>
-            </div>
-            <div class="hero-btns">
-                <a href="#contact" class="btn btn-primary">Get Free Quote →</a>
-                <a href="#gallery" class="btn btn-outline">View Our Work</a>
-            </div>
+    <div class="hero-inner">
+        <h1>Quality <em>Tiling</em> for Every Space</h1>
+        <p>Bathrooms, floors, pools, driveways — renovation specialists across Brisbane. QBCC licensed & fully insured.</p>
+        <div class="hero-badges">
+            <span class="badge">QBCC Licensed</span>
+            <span class="badge">$10M Insured</span>
+            <span class="badge">WorkCover QLD</span>
         </div>
-        <div class="hero-visual">
-            <div class="hero-card">
-                <div class="num">10+</div>
-                <div class="label">Years of Professional Tiling Experience</div>
-            </div>
-            <div class="hero-card">
-                <div class="num">500+</div>
-                <div class="label">Projects Completed</div>
-            </div>
-            <div class="hero-card">
-                <div class="num">100%</div>
-                <div class="label">Quality Guaranteed</div>
-            </div>
+        <div class="hero-btns">
+            <a href="#contact" class="btn btn-warm">Get Free Quote</a>
+            <a href="tel:0432102627" class="btn btn-ghost">📞 Call Now</a>
+        </div>
+        <div class="stats">
+            <div class="stat"><div class="stat-n">10+</div><div class="stat-l">Years</div></div>
+            <div class="stat"><div class="stat-n">500+</div><div class="stat-l">Projects</div></div>
+            <div class="stat"><div class="stat-n">49</div><div class="stat-l">Reviews</div></div>
         </div>
     </div>
 </section>
 
-<!-- SERVICES -->
-<section class="services" id="services">
-    <div class="section-header">
-        <p class="tag">What We Do</p>
-        <h2>Our Tiling Services</h2>
-        <p>From bathroom renovations to large commercial fit-outs, we deliver precision tiling with expert craftsmanship.</p>
-    </div>
-    <div class="services-grid">
-        <div class="service-card">
-            <div class="service-icon">🚿</div>
-            <h3>Bathroom Tiling</h3>
-            <p>Complete bathroom wall and floor tiling including waterproofing certification (Form 43). Shower recesses, feature walls, and full renovations.</p>
-        </div>
-        <div class="service-card">
-            <div class="service-icon">🏠</div>
-            <h3>Floor Tiling</h3>
-            <p>Internal and external floor tiling. Large format tiles, natural stone, porcelain, and ceramic installations for homes and commercial spaces.</p>
-        </div>
-        <div class="service-card">
-            <div class="service-icon">🧱</div>
-            <h3>Wall Tiling</h3>
-            <p>Kitchen splashbacks, feature walls, laundry areas, and external cladding. Precision cuts and seamless finishes for any space.</p>
-        </div>
-        <div class="service-card">
-            <div class="service-icon">🏊</div>
-            <h3>Pool & Outdoor</h3>
-            <p>Pool surrounds, balconies, patios, driveways, and alfresco areas. French pattern pavers, cobblestones, and travertine installations.</p>
-        </div>
-        <div class="service-card">
-            <div class="service-icon">💧</div>
-            <h3>Waterproofing</h3>
-            <p>QBCC-compliant waterproofing for wet areas with Form 43 certification. Membrane application, testing, and full documentation.</p>
-        </div>
-        <div class="service-card">
-            <div class="service-icon">🏗️</div>
-            <h3>Commercial Fit-outs</h3>
-            <p>Large-scale commercial tiling projects. Multi-unit developments, aged care, office buildings, and retail spaces.</p>
-        </div>
+<section class="services">
+    <div class="sec-title"><h2>What We Do</h2></div>
+    <div class="svc-grid">
+        <div class="svc"><div class="svc-ico">🚿</div><h3>Bathrooms</h3></div>
+        <div class="svc"><div class="svc-ico">🏠</div><h3>Floors</h3></div>
+        <div class="svc"><div class="svc-ico">🍳</div><h3>Splashbacks</h3></div>
+        <div class="svc"><div class="svc-ico">🏊</div><h3>Pools</h3></div>
+        <div class="svc"><div class="svc-ico">💧</div><h3>Waterproofing</h3></div>
+        <div class="svc"><div class="svc-ico">🪨</div><h3>Driveways</h3></div>
     </div>
 </section>
 
-<!-- INSTAGRAM GALLERY -->
-<section class="gallery-section" id="gallery">
-    <div class="section-header">
-        <p class="tag">Our Work</p>
-        <h2>Latest from the Job Site</h2>
-        <p>Real work, real results. Follow us on Instagram for daily updates from our projects across Brisbane.</p>
+<section class="gallery" id="work">
+    <div class="sec-title"><h2>Our Work</h2></div>
+    <div class="gal-grid">
+        <a class="gal-item" href="https://www.instagram.com/yojoservices4tiling/" target="_blank"><img src="images/pool-highend.jpg" alt="Tiling" loading="lazy"></a>
+        <a class="gal-item" href="https://www.instagram.com/yojoservices4tiling/" target="_blank"><img src="images/driveway-complete.jpg" alt="Tiling" loading="lazy"></a>
+        <div class="gal-item"><img src="images/bathroom-complete.jpg" alt="Tiling" loading="lazy"></div>
+        <a class="gal-item" href="https://www.instagram.com/yojoservices4tiling/" target="_blank"><img src="images/french-travertine.jpg" alt="Tiling" loading="lazy"></a>
+        <a class="gal-item" href="https://www.instagram.com/yojoservices4tiling/" target="_blank"><img src="images/sealing-travertine.jpg" alt="Tiling" loading="lazy"></a>
+        <div class="gal-item"><img src="images/kitchen-splashback.jpg" alt="Tiling" loading="lazy"></div>
+        <a class="gal-item" href="https://www.instagram.com/yojoservices4tiling/" target="_blank"><img src="images/cobble-final.jpg" alt="Tiling" loading="lazy"></a>
+        <div class="gal-item"><img src="images/shower-room-1.jpg" alt="Tiling" loading="lazy"></div>
+        <a class="gal-item" href="https://www.instagram.com/yojoservices4tiling/" target="_blank"><img src="images/driveway-grouting.jpg" alt="Tiling" loading="lazy"></a>
+        <div class="gal-item"><img src="images/pattern-floor.jpg" alt="Tiling" loading="lazy"></div>
+        <div class="gal-item"><img src="images/exterior-cladding.jpg" alt="Tiling" loading="lazy"></div>
+        <a class="gal-item" href="https://www.instagram.com/yojoservices4tiling/" target="_blank"><img src="images/driveway-detail.jpg" alt="Tiling" loading="lazy"></a>
     </div>
-    <div class="ig-grid" id="igGrid">
-        <a class="ig-item" href="https://www.instagram.com/yojoservices4tiling/" target="_blank" rel="noopener">
-            <img src="images/pool-highend.jpg" alt="Tiling work" loading="lazy">
-        </a>
-        <a class="ig-item" href="https://www.instagram.com/yojoservices4tiling/" target="_blank" rel="noopener">
-            <img src="images/driveway-complete.jpg" alt="Tiling work" loading="lazy">
-        </a>
-        <div class="ig-item">
-            <img src="images/bathroom-complete.jpg" alt="Tiling work" loading="lazy">
-        </div>
-        <a class="ig-item" href="https://www.instagram.com/yojoservices4tiling/" target="_blank" rel="noopener">
-            <img src="images/french-travertine.jpg" alt="Tiling work" loading="lazy">
-        </a>
-        <a class="ig-item" href="https://www.instagram.com/yojoservices4tiling/" target="_blank" rel="noopener">
-            <img src="images/sealing-travertine.jpg" alt="Tiling work" loading="lazy">
-        </a>
-        <div class="ig-item">
-            <img src="images/kitchen-splashback.jpg" alt="Tiling work" loading="lazy">
-        </div>
-        <a class="ig-item" href="https://www.instagram.com/yojoservices4tiling/" target="_blank" rel="noopener">
-            <img src="images/driveway-grouting.jpg" alt="Tiling work" loading="lazy">
-        </a>
-        <div class="ig-item">
-            <img src="images/shower-room-1.jpg" alt="Tiling work" loading="lazy">
-        </div>
-        <a class="ig-item" href="https://www.instagram.com/yojoservices4tiling/" target="_blank" rel="noopener">
-            <img src="images/cobble-final.jpg" alt="Tiling work" loading="lazy">
-        </a>
-        <a class="ig-item" href="https://www.instagram.com/yojoservices4tiling/" target="_blank" rel="noopener">
-            <img src="images/driveway-detail.jpg" alt="Tiling work" loading="lazy">
-        </a>
-        <div class="ig-item">
-            <img src="images/pattern-floor.jpg" alt="Tiling work" loading="lazy">
-        </div>
-        <div class="ig-item">
-            <img src="images/exterior-cladding.jpg" alt="Tiling work" loading="lazy">
-        </div>
-    </div>
-    <div class="ig-follow">
-        <a href="https://www.instagram.com/yojoservices4tiling/" target="_blank" rel="noopener">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
-            Follow @yojoservices4tiling
-        </a>
-    </div>
+    <div class="gal-follow"><a href="https://www.instagram.com/yojoservices4tiling/" target="_blank">📸 Follow @yojoservices4tiling</a></div>
 </section>
 
-<!-- PROJECTS -->
-<section id="projects" style="background: var(--light);">
-    <div class="section-header">
-        <p class="tag">Portfolio</p>
-        <h2>Recent Projects</h2>
-        <p>A selection of our recent tiling work across Brisbane and South East Queensland.</p>
-    </div>
-    <div class="projects-grid">
-        <div class="project-card">
-            <div class="project-header c1">🚿</div>
-            <div class="project-info">
-                <h3>Bowen Terrace, New Farm</h3>
-                <p>Bathroom renovation — stripped back to substrate, waterproofed, and retiled with large format porcelain. New niche and linear drain.</p>
-                <span class="project-tag">Renovation</span>
-            </div>
+<section class="reviews" id="reviews">
+    <div class="sec-title"><h2>What Clients Say</h2><p>49 verified reviews on Oneflare</p></div>
+    <div class="rev-scroll">
+        <div class="rev">
+            <div class="rev-stars">★★★★★</div>
+            <p class="rev-text">"Fantastic service. Prompt, reliable, knowledgeable. Finished product was fabulous — no mess at all. 10 out of 10!"</p>
+            <p class="rev-who">Diane M.</p>
+            <p class="rev-where">Cleveland</p>
         </div>
-        <div class="project-card">
-            <div class="project-header c2">🏠</div>
-            <div class="project-info">
-                <h3>Sovereign Ave, Bray Park</h3>
-                <p>Whole-house renovation — kitchen splashback, two bathrooms, laundry, and outdoor entertaining area with French pattern pavers.</p>
-                <span class="project-tag">Renovation</span>
-            </div>
+        <div class="rev">
+            <div class="rev-stars">★★★★★</div>
+            <p class="rev-text">"Amazing job with our bathroom and alfresco floor. Very efficient, professional and skilled. Highly recommend."</p>
+            <p class="rev-who">Susan W.</p>
+            <p class="rev-where">Brisbane</p>
         </div>
-        <div class="project-card">
-            <div class="project-header c3">🏊</div>
-            <div class="project-info">
-                <h3>Robinson St, Shorncliffe</h3>
-                <p>Pool surround and wet area renovation. Cobblestone driveway, outdoor tiling with proper falls and drainage.</p>
-                <span class="project-tag">Renovation</span>
-            </div>
+        <div class="rev">
+            <div class="rev-stars">★★★★★</div>
+            <p class="rev-text">"The bathroom looks beautiful! Lovely team, professional and helpful."</p>
+            <p class="rev-who">Tracey</p>
+            <p class="rev-where">Shailer Park</p>
         </div>
-        <div class="project-card">
-            <div class="project-header c4">💧</div>
-            <div class="project-info">
-                <h3>Cherrington Way, Murrumba Downs</h3>
-                <p>Bathroom and ensuite renovation — floor-to-ceiling tiles, waterproofing with Form 43 certification, feature wall.</p>
-                <span class="project-tag">Renovation</span>
-            </div>
+        <div class="rev">
+            <div class="rev-stars">★★★★★</div>
+            <p class="rev-text">"Very impressed with the whole team. Very professional and friendly."</p>
+            <p class="rev-who">Chris</p>
+            <p class="rev-where">Ipswich</p>
         </div>
-        <div class="project-card">
-            <div class="project-header c5">🧱</div>
-            <div class="project-info">
-                <h3>Allen Rd, Bunya</h3>
-                <p>Full renovation — multiple bathrooms, kitchen splashback, balcony waterproofing, and exterior wall cladding.</p>
-                <span class="project-tag">Renovation</span>
-            </div>
+        <div class="rev">
+            <div class="rev-stars">★★★★★</div>
+            <p class="rev-text">"Completed tasks to a very high standard within time allocated. Exceeded expectations."</p>
+            <p class="rev-who">William</p>
+            <p class="rev-where">Chapel Hill</p>
         </div>
-        <div class="project-card">
-            <div class="project-header c6">🏗️</div>
-            <div class="project-info">
-                <h3>Berwick & Dorset Street</h3>
-                <p>Multi-unit renovation project. Wall and floor tiling across multiple units to builder specifications and tight deadlines.</p>
-                <span class="project-tag">Multi-Unit</span>
-            </div>
+        <div class="rev">
+            <div class="rev-stars">★★★★★</div>
+            <p class="rev-text">"Excited to do the job, turned up on time to quote."</p>
+            <p class="rev-who">Natasha</p>
+            <p class="rev-where">Wynnum</p>
         </div>
     </div>
+    <div class="rev-badge">⭐ Most Hired Award · Top Rated Award on <a href="https://www.oneflare.com.au/b/yojoservices" target="_blank" style="color:var(--warm);text-decoration:none;font-weight:600">Oneflare</a></div>
 </section>
 
-<!-- WHY US -->
-<section class="why-us" id="why">
-    <div class="section-header">
-        <p class="tag">Why Choose Us</p>
-        <h2>The YOJO Difference</h2>
-        <p>Licensed, insured, and committed to delivering the highest standard of tiling work.</p>
-    </div>
-    <div class="why-grid">
-        <div class="why-card">
-            <div class="why-icon">🏅</div>
-            <h3>QBCC Licensed</h3>
-            <p>Fully licensed Queensland Building and Construction Commission contractor.</p>
+<section class="quote" id="contact">
+    <div class="quote-inner">
+        <h2>Get a Free Quote</h2>
+        <p>Tell us about your project — we'll respond within 24 hours.</p>
+        <div class="q-features">
+            <span>Free, no obligation</span>
+            <span>Response within 24hrs</span>
+            <span>QBCC licensed</span>
         </div>
-        <div class="why-card">
-            <div class="why-icon">🛡️</div>
-            <h3>$10M Insured</h3>
-            <p>$10 million public liability insurance through BizCover for your peace of mind.</p>
-        </div>
-        <div class="why-card">
-            <div class="why-icon">📋</div>
-            <h3>Form 43 Certified</h3>
-            <p>QBCC-compliant waterproofing certification for all wet area installations.</p>
-        </div>
-        <div class="why-card">
-            <div class="why-icon">⭐</div>
-            <h3>Quality Guarantee</h3>
-            <p>We stand behind every job with proper documentation and workmanship warranty.</p>
-        </div>
-    </div>
-</section>
-
-<!-- SERVICE AREAS -->
-<section id="areas">
-    <div class="section-header">
-        <p class="tag">Where We Work</p>
-        <h2>Service Areas</h2>
-        <p>Covering Brisbane and surrounding regions across South East Queensland.</p>
-    </div>
-    <div class="area-list">
-        <span class="area-pill">Brisbane CBD</span>
-        <span class="area-pill">New Farm</span>
-        <span class="area-pill">Bray Park</span>
-        <span class="area-pill">Shorncliffe</span>
-        <span class="area-pill">Murrumba Downs</span>
-        <span class="area-pill">Bunya</span>
-        <span class="area-pill">Scarborough</span>
-        <span class="area-pill">Nudgee Beach</span>
-        <span class="area-pill">Albany Creek</span>
-        <span class="area-pill">McDowall</span>
-        <span class="area-pill">Bridgeman Downs</span>
-        <span class="area-pill">Kippa-Ring</span>
-        <span class="area-pill">Elimbah</span>
-        <span class="area-pill">Ferny Hills</span>
-        <span class="area-pill">Carseldine</span>
-        <span class="area-pill">Auchenflower</span>
-        <span class="area-pill">Highgate Hill</span>
-        <span class="area-pill">Helensvale</span>
-        <span class="area-pill">Brown Plains</span>
-        <span class="area-pill">Gold Coast</span>
-        <span class="area-pill">Sunshine Coast</span>
-    </div>
-</section>
-
-<!-- CTA -->
-<!-- REVIEWS -->
-<section id="reviews">
-    <div class="section-header">
-        <p class="tag">Customer Reviews</p>
-        <h2>What Our Clients Say</h2>
-        <p>Real feedback from real customers across Brisbane.</p>
-    </div>
-    <div class="reviews-grid">
-        <div class="review-card">
-            <div class="review-stars">★★★★★</div>
-            <p class="review-text">"Fantastic service. They were prompt, reliable, knowledgeable and kept me informed every step of the way. Finished product was fabulous and they were very clean — no mess left at all. 10 out of 10!"</p>
-            <p class="review-author">Diane M.</p>
-            <p class="review-location">Cleveland, QLD</p>
-        </div>
-        <div class="review-card">
-            <div class="review-stars">★★★★★</div>
-            <p class="review-text">"Very efficient, professional and skilled. Did an amazing job with our new bathroom and alfresco floor. Highly recommend."</p>
-            <p class="review-author">Susan W.</p>
-            <p class="review-location">Brisbane, QLD</p>
-        </div>
-        <div class="review-card">
-            <div class="review-stars">★★★★★</div>
-            <p class="review-text">"Very happy with the job, the bathroom looks beautiful! Lovely team, professional and helpful."</p>
-            <p class="review-author">Tracey</p>
-            <p class="review-location">Shailer Park, QLD</p>
-        </div>
-        <div class="review-card">
-            <div class="review-stars">★★★★★</div>
-            <p class="review-text">"I was very impressed with the whole team who took care of our job. Very professional and friendly."</p>
-            <p class="review-author">Chris</p>
-            <p class="review-location">Ipswich, QLD</p>
-        </div>
-        <div class="review-card">
-            <div class="review-stars">★★★★★</div>
-            <p class="review-text">"They completed the assigned tasks to a very high standard within the time allocated. They exceeded expectations."</p>
-            <p class="review-author">William</p>
-            <p class="review-location">Chapel Hill, QLD</p>
-        </div>
-        <div class="review-card">
-            <div class="review-stars">★★★★★</div>
-            <p class="review-text">"Yojo services were excited to do the job, turned up at time to quote."</p>
-            <p class="review-author">Natasha</p>
-            <p class="review-location">Wynnum, QLD</p>
-        </div>
-    </div>
-    <div class="review-bottom">
-        <p style="color:var(--gray);margin-bottom:1rem;font-size:0.95rem">⭐ 49 reviews on Oneflare · Most Hired Award · Top Rated Award</p>
-        <a href="review.html" class="btn btn-primary" style="margin-right:1rem">⭐ Leave a Review</a>
-        <a href="https://www.oneflare.com.au/b/yojoservices" target="_blank" class="btn btn-outline" style="border-color:var(--accent);color:var(--accent)">View All on Oneflare</a>
-    </div>
-</section>
-
-<section class="quote-section" id="contact">
-    <div class="quote-container">
-        <div class="quote-text">
-            <h2>Get a Free Quote</h2>
-            <p>Tell us about your project and we'll get back to you within 24 hours with a detailed estimate.</p>
-            <div class="quote-features">
-                <div class="qf"><span>✓</span> Free, no-obligation quote</div>
-                <div class="qf"><span>✓</span> Response within 24 hours</div>
-                <div class="qf"><span>✓</span> QBCC licensed & insured</div>
+        <form class="q-form" action="https://formspree.io/f/xpwrjqkb" method="POST">
+            <div class="q-row">
+                <div class="q-grp"><label>Name *</label><input type="text" name="name" required placeholder="Your name"></div>
+                <div class="q-grp"><label>Phone *</label><input type="tel" name="phone" required placeholder="04XX XXX XXX"></div>
             </div>
-            <div class="quote-contact">
-                <p>Prefer to call?</p>
-                <a href="tel:0432102627" class="btn btn-primary" style="margin-top:0.5rem">📞 0432 102 627</a>
+            <div class="q-row">
+                <div class="q-grp"><label>Email</label><input type="email" name="email" placeholder="your@email.com"></div>
+                <div class="q-grp"><label>Suburb *</label><input type="text" name="suburb" required placeholder="e.g. Bray Park"></div>
             </div>
-        </div>
-        <form class="quote-form" action="https://formspree.io/f/xpwrjqkb" method="POST" id="quoteForm">
-            <div class="form-row">
-                <div class="form-group">
-                    <label>Name *</label>
-                    <input type="text" name="name" required placeholder="Your name">
-                </div>
-                <div class="form-group">
-                    <label>Phone *</label>
-                    <input type="tel" name="phone" required placeholder="04XX XXX XXX">
-                </div>
-            </div>
-            <div class="form-group">
-                <label>Email</label>
-                <input type="email" name="email" placeholder="your@email.com">
-            </div>
-            <div class="form-group">
-                <label>Suburb *</label>
-                <input type="text" name="suburb" required placeholder="e.g. Bray Park">
-            </div>
-            <div class="form-group">
+            <div class="q-grp">
                 <label>Type of Work *</label>
                 <select name="work_type" required>
                     <option value="">Select...</option>
                     <option>Bathroom Renovation</option>
                     <option>Floor Tiling</option>
                     <option>Kitchen Splashback</option>
-                    <option>Wall Tiling</option>
                     <option>Pool / Outdoor</option>
                     <option>Waterproofing</option>
-                    <option>Balcony / Patio</option>
                     <option>Driveway / Pavers</option>
+                    <option>Balcony / Patio</option>
                     <option>Other</option>
                 </select>
             </div>
-            <div class="form-group">
-                <label>Approximate Area (m²)</label>
-                <input type="text" name="area" placeholder="e.g. 15">
-            </div>
-            <div class="form-group">
-                <label>Project Details</label>
-                <textarea name="details" rows="3" placeholder="Tell us about your project — what needs to be done, any specific tiles or finishes you want..."></textarea>
-            </div>
+            <div class="q-grp"><label>Project Details</label><textarea name="details" placeholder="Brief description of your project..."></textarea></div>
             <input type="hidden" name="_subject" value="New Quote Request - YOJO Tiling">
-            <input type="hidden" name="_template" value="table">
-            <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center">Get Free Quote →</button>
-            <p class="form-note">We respect your privacy. Your details are only used to provide a quote.</p>
+            <button type="submit" class="btn btn-warm" style="width:100%;justify-content:center;padding:0.9rem">Get Free Quote →</button>
         </form>
+        <div class="q-or"><p style="color:rgba(255,255,255,0.4);margin-top:1.5rem;font-size:0.9rem">Or call directly</p><a href="tel:0432102627">📞 0432 102 627</a></div>
     </div>
 </section>
 
-
 <footer>
-    <div class="logo-foot">YOJO<span>.</span>tiling</div>
-    <p>YOJO Tiling — Professional Tiling Services Brisbane</p>
-    <p style="font-size:0.8rem;opacity:0.4;">Trading as Yojoservices4tiling</p>
-    <p>QBCC Licensed | $10M Public Liability | WorkCover QLD</p>
-    <div class="socials">
-        <a href="https://www.instagram.com/yojoservices4tiling/" target="_blank" rel="noopener" title="Instagram">📸</a>
-        <a href="tel:0432102627" title="Call us">📞</a>
-        <a href="mailto:yojoservices4tiling@gmail.com" title="Email us">✉️</a>
-    </div>
-    <p style="font-size: 0.8rem; opacity: 0.5;">© 2026 Yojoservices4tiling. All rights reserved.</p>
+    <div class="f-logo">YOJO<span>.</span></div>
+    <p>Professional Tiling Services · Brisbane, QLD</p>
+    <p style="margin:0.5rem 0">
+        <a href="tel:0432102627">📞 Call</a>
+        <a href="mailto:yojoservices4tiling@gmail.com">✉️ Email</a>
+        <a href="https://www.instagram.com/yojoservices4tiling/" target="_blank">📸 Instagram</a>
+        <a href="review.html">⭐ Review</a>
+    </p>
+    <p>QBCC Licensed · $10M Public Liability · WorkCover QLD</p>
+    <p class="f-trade">Trading as Yojoservices4tiling · ABN 60 654 914 168</p>
+    <p style="margin-top:0.5rem;opacity:0.3">© 2026</p>
 </footer>
 
 <script>
-    window.addEventListener('scroll', () => {
-        document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 50);
-    });
-    document.querySelectorAll('a[href^="#"]').forEach(a => {
-        a.addEventListener('click', e => {
-            e.preventDefault();
-            const target = document.querySelector(a.getAttribute('href'));
-            if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-            document.getElementById('navLinks').classList.remove('open');
-        });
-    });
-    const observer = new IntersectionObserver(entries => {
-        entries.forEach(e => { if (e.isIntersecting) { e.target.style.opacity = 1; e.target.style.transform = 'translateY(0)'; }});
-    }, { threshold: 0.1 });
-    document.querySelectorAll('.service-card, .project-card, .why-card, .ig-item').forEach(el => {
-        el.style.opacity = 0; el.style.transform = 'translateY(20px)';
-        el.style.transition = 'all 0.6s ease';
-        observer.observe(el);
-    });
+document.querySelectorAll('a[href^="#"]').forEach(a=>{a.addEventListener('click',e=>{e.preventDefault();const t=document.querySelector(a.getAttribute('href'));if(t)t.scrollIntoView({behavior:'smooth'})})});
 </script>
-
 </body>
 </html>
