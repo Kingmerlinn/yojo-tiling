@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leave a Review | YOJO Tiling Brisbane</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        * { margin:0; padding:0; box-sizing:border-box; }
+        body { font-family:'Inter',sans-serif; background:#f8f9fa; min-height:100vh; display:flex; align-items:center; justify-content:center; padding:2rem; }
+        .card { background:white; border-radius:24px; padding:3rem; max-width:500px; width:100%; box-shadow:0 20px 60px rgba(0,0,0,0.08); text-align:center; }
+        .logo { font-size:1.6rem; font-weight:800; color:#1a1a2e; margin-bottom:0.5rem; }
+        .logo span { color:#e94560; }
+        h1 { font-size:1.8rem; font-weight:800; color:#1a1a2e; margin:1rem 0 0.5rem; }
+        .subtitle { color:#6c757d; font-size:1rem; margin-bottom:2rem; }
+        .stars { display:flex; justify-content:center; gap:0.5rem; margin-bottom:2rem; }
+        .star { font-size:3rem; cursor:pointer; transition:transform 0.2s; color:#ddd; }
+        .star:hover, .star.active { color:#f5a623; transform:scale(1.15); }
+        textarea { width:100%; padding:1rem; border:1.5px solid #e0e0e0; border-radius:12px; font-size:1rem; font-family:inherit; resize:vertical; min-height:100px; margin-bottom:1rem; background:#fafafa; }
+        textarea:focus { outline:none; border-color:#e94560; background:white; }
+        input[type="text"] { width:100%; padding:0.8rem 1rem; border:1.5px solid #e0e0e0; border-radius:12px; font-size:1rem; font-family:inherit; margin-bottom:1rem; background:#fafafa; }
+        input:focus { outline:none; border-color:#e94560; background:white; }
+        .btn { width:100%; padding:1rem; background:#e94560; color:white; border:none; border-radius:12px; font-size:1.1rem; font-weight:700; cursor:pointer; transition:all 0.3s; }
+        .btn:hover { background:#d63851; transform:translateY(-2px); box-shadow:0 8px 20px rgba(233,69,96,0.3); }
+        .btn:disabled { background:#ccc; cursor:not-allowed; transform:none; box-shadow:none; }
+        .divider { margin:1.5rem 0; color:#ccc; font-size:0.9rem; }
+        .alt-links { display:flex; flex-direction:column; gap:0.75rem; }
+        .alt-link { display:flex; align-items:center; justify-content:center; gap:0.5rem; padding:0.8rem; border:1.5px solid #e0e0e0; border-radius:12px; text-decoration:none; color:#343a40; font-weight:500; transition:all 0.2s; }
+        .alt-link:hover { border-color:#e94560; color:#e94560; }
+        .thanks { display:none; }
+        .thanks h2 { color:#1a1a2e; font-size:1.5rem; margin:1rem 0; }
+        .thanks .check { font-size:4rem; margin-bottom:0.5rem; }
+        .thanks p { color:#6c757d; }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div id="formView">
+            <div class="logo">YOJO<span>.</span>tiling</div>
+            <h1>How did we do?</h1>
+            <p class="subtitle">Your feedback helps us improve and helps others find quality tiling services.</p>
+            
+            <div class="stars" id="stars">
+                <span class="star" data-v="1">★</span>
+                <span class="star" data-v="2">★</span>
+                <span class="star" data-v="3">★</span>
+                <span class="star" data-v="4">★</span>
+                <span class="star" data-v="5">★</span>
+            </div>
+            
+            <form action="https://formspree.io/f/xpwrjqkb" method="POST" id="reviewForm">
+                <input type="hidden" name="_subject" value="New Customer Review - YOJO Tiling">
+                <input type="hidden" name="_template" value="table">
+                <input type="hidden" name="rating" id="ratingInput" value="">
+                <input type="text" name="name" placeholder="Your name (optional)">
+                <input type="text" name="suburb" placeholder="Suburb (optional)">
+                <textarea name="review" placeholder="Tell us about your experience..." required></textarea>
+                <button type="submit" class="btn" id="submitBtn" disabled>Submit Review</button>
+            </form>
+
+            <div class="divider">— or leave a review on —</div>
+            <div class="alt-links">
+                <a class="alt-link" href="https://www.oneflare.com.au/b/yojoservices" target="_blank">⭐ Oneflare</a>
+                <a class="alt-link" href="https://www.instagram.com/yojoservices4tiling/" target="_blank">📸 Instagram</a>
+            </div>
+        </div>
+
+        <div class="thanks" id="thanksView">
+            <div class="check">✅</div>
+            <h2>Thank you!</h2>
+            <p>Your review means a lot to us. We appreciate your business!</p>
+        </div>
+    </div>
+
+    <script>
+        let rating = 0;
+        document.querySelectorAll('.star').forEach(s => {
+            s.addEventListener('click', () => {
+                rating = parseInt(s.dataset.v);
+                document.getElementById('ratingInput').value = rating;
+                document.getElementById('submitBtn').disabled = false;
+                document.querySelectorAll('.star').forEach((st, i) => {
+                    st.classList.toggle('active', i < rating);
+                });
+            });
+            s.addEventListener('mouseenter', () => {
+                const v = parseInt(s.dataset.v);
+                document.querySelectorAll('.star').forEach((st, i) => {
+                    st.style.color = i < v ? '#f5a623' : '#ddd';
+                });
+            });
+        });
+        document.getElementById('stars').addEventListener('mouseleave', () => {
+            document.querySelectorAll('.star').forEach((st, i) => {
+                st.style.color = i < rating ? '#f5a623' : '#ddd';
+            });
+        });
+        document.getElementById('reviewForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            fetch(this.action, { method:'POST', body: new FormData(this), headers:{'Accept':'application/json'} })
+            .then(() => {
+                document.getElementById('formView').querySelector('form').style.display = 'none';
+                document.getElementById('formView').querySelector('.stars').style.display = 'none';
+                document.getElementById('formView').querySelector('.divider').style.display = 'none';
+                document.getElementById('formView').querySelector('.alt-links').style.display = 'none';
+                document.getElementById('thanksView').style.display = 'block';
+            });
+        });
+    </script>
+</body>
+</html>
